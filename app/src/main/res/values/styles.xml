@@ -1,0 +1,28 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- 顶部弹出效果 -->
+    <style name="AnimationPhoto">
+        <item name="android:windowEnterAnimation">@anim/photo_popup_in</item>
+        <item name="android:windowExitAnimation">@anim/photo_popup_out</item>
+    </style>
+
+    <!-- 底部弹出效果 -->
+    <style name="AnimationFloderMusic">
+        <item name="android:windowEnterAnimation">@anim/floder_music_popup_in</item>
+        <item name="android:windowExitAnimation">@anim/floder_music_popup_out</item>
+    </style>
+
+    <!-- 圆形checkBox -->
+    <style name="CircleCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/circle_check_box</item>
+    </style>
+
+</resources>

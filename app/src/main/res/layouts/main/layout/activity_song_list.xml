@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SongListActivity"
+    android:orientation="vertical"
+    android:id="@+id/id_for_floder_music_popup">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#000"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/select_all_music"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="#000"
+            android:gravity="center"
+            android:text="全选"
+            android:textSize="18sp"
+            android:textColor="#fff"/>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:background="#993333"
+            android:layout_weight="1"
+            app:tabGravity="center"
+            app:tabIndicatorColor="#000"
+            app:tabMode="scrollable"
+            app:tabPaddingEnd="20dp"
+            app:tabPaddingStart="20dp"
+            app:tabSelectedTextColor="#fff"
+            app:tabTextColor="#000">
+
+        </android.support.design.widget.TabLayout>
+
+        <!--<ImageView-->
+        <!--android:id="@+id/search_image"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"/>-->
+
+        <Button
+            android:id="@+id/sure_song_list_path"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:background="#000"
+            android:gravity="center"
+            android:text="确认"
+            android:textColor="#fff"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/content_tab_layout"/>
+
+</LinearLayout>
